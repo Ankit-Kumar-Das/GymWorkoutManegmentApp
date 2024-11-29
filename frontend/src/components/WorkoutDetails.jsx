@@ -4,7 +4,7 @@ import { useWorkoutsContext } from '../hooks/UseWorkoutsContext'
 const WorkoutDetails = ({workout}) => {
   const {dispatch} = useWorkoutsContext()
   const handleClick=async()=>{
-    const response = await fetch('http://localhost:8000/api/workouts/'+ workout._id, {
+    const response = await fetch('https://gym-workoutmanegmentapp.onrender.com/api/workouts/'+ workout._id, {
       method: 'DELETE'
     })
     const json = await response.json()
