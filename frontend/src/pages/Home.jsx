@@ -11,7 +11,7 @@ const Home = () => {
     const fetchWorkouts = async () => {
       try {
         //  hhs
-        const response = await fetch("http://localhost:8000/api/workouts")
+        const response = await fetch("https://gym-workoutmanegmentapp.onrender.com/api/workouts")
         console.log('Raw response:', response);
         const json = await response.json()
 
